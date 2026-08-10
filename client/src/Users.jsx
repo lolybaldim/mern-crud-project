@@ -7,14 +7,14 @@ function Users() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/")
+      .get("https://mern-crud-project-avrg.onrender.com/")
       .then((result) => setUsers(result.data))
       .catch((err) => console.log(err));
   }, []);
 
   const handleDelete = (id) => {
     axios
-      .delete("http://localhost:3001/deleteUser/" + id)
+      .delete("https://mern-crud-project-avrg.onrender.com/deleteUser/" + id)
       .then((res) => {
         console.log(res);
         window.location.reload();

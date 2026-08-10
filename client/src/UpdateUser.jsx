@@ -11,7 +11,7 @@ function UpdateUser() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/getUser/" + id)
+      .get("https://mern-crud-project-avrg.onrender.com/getUser/" + id)
       .then((result) => {
         setName(result.data.name);
         setEmail(result.data.email);
@@ -23,7 +23,7 @@ function UpdateUser() {
   const update = (e) => {
     e.preventDefault();
     axios
-      .put("http://localhost:3001/updateUser/" + id, { name, email, age })
+      .put("https://mern-crud-project-avrg.onrender.com/updateUser/" + id, { name, email, age })
       .then((result) => {
         console.log(result);
         navigate("/");

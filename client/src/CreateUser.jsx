@@ -11,7 +11,7 @@ function CreateUser() {
   const submit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3001/createUser", { name, email, age })
+      .post("https://mern-crud-project-avrg.onrender.com/createUser", { name, email, age })
       .then((result) => {
         console.log(result);
         navigate("/");
