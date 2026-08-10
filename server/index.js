@@ -9,7 +9,7 @@ app.use(express.json());
 
 // MANUAL STEP: replace this connection string with your own MongoDB
 // (local Compass instance or MongoDB Atlas connection string)
-mongoose.connect("mongodb://127.0.0.1:27017/crud");
+mongoose.connect("mongodb+srv://samardeidara_db_user:wUi20XzRqSFF2xEW@cluster0.eo9bh1v.mongodb.net/crud?appName=Cluster0");
 
 // CREATE
 app.post("/createUser", (req, res) => {
